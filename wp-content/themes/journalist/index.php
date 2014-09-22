@@ -37,6 +37,8 @@
 
 </div>
 
+<?php get_footer(); ?>
+
 <!--
 
 <?php wp_reset_postdata(); ?>
@@ -79,7 +81,5 @@
 	</div>
 
 </div> 
-
-<?php get_footer(); ?>
 
 -->
