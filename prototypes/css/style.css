@@ -4,9 +4,9 @@ body {
 }
 
 #stage {
-	width: 545px;
-	height: 307px;
-	border: 1px solid black;
+	width: 800px;
+	height: 450px;
+	/*border: 1px solid black;*/
 	margin: 0 auto;
 	position: relative;
 }

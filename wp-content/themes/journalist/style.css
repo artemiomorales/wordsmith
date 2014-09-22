@@ -578,6 +578,13 @@ display: inline;
 
 /* Edits */
 
+
+#content {
+	width: 100%;
+}
+
+/* Not in use 
+
 #content-prototypes {
 	width: 60%;
 }
@@ -586,12 +593,15 @@ display: inline;
 	width: 35%;
 }
 
+*/
+
 #container .content {
 	display: inline-block;
 }
 
 iframe {
 	width: 100%;
-	height: ;
+	height: 460px;
 	overflow: visible;
+	border: 0;
 }

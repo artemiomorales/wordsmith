@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<?php $query1 = new WP_Query( 'category_name=projects' ); ?>
-<div id="content-prototypes" class="content group">
+<?php $query1 = new WP_Query('is_category=projects'); ?>
+<div id="content" class="content group">
 	<?php if ($query1->have_posts()) : while ($query1->have_posts()) : $query1->the_post(); ?>
 
 	<!-- <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2> -->
@@ -37,15 +37,18 @@
 
 </div>
 
+<!--
+
 <?php wp_reset_postdata(); ?>
+
 <?php $query2 = new WP_Query( 'category_name=entries' ); ?>
 
 <div id="content-entries" class="content group">
 	<?php if ($query2->have_posts()) : while ($query2->have_posts()) : $query2->the_post(); ?>
 
-	<!-- <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2> -->
+	<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	<h2 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h2>
-	<!-- <p class="comments"><a href="<?php comments_link(); ?>"><?php comments_number('without comments','with one comment','with % comments'); ?></a></p> -->
+	<p class="comments"><a href="<?php comments_link(); ?>"><?php comments_number('without comments','with one comment','with % comments'); ?></a></p>
 
 	<div class="main">
 		<?php the_content('Read the rest of this entry &raquo;'); ?>
@@ -78,3 +81,5 @@
 </div> 
 
 <?php get_footer(); ?>
+
+-->
