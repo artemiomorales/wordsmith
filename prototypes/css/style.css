@@ -1,0 +1,24 @@
+body {
+	color: #000;
+	font-family: Georgia, serif;
+}
+
+#stage {
+	width: 545px;
+	height: 307px;
+	border: 1px solid black;
+	margin: 0 auto;
+	position: relative;
+}
+
+.text-container {
+	display: inline-block;
+}
+
+.text-container:hover {
+	cursor: pointer;
+}
+
+#initialize, .draggable {
+	display: none;
+}

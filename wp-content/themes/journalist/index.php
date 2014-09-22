@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php $query1 = new WP_Query( 'category_name=entries' ); ?>
+<?php $query1 = new WP_Query( 'category_name=projects' ); ?>
 <div id="content-prototypes" class="content group">
 	<?php if ($query1->have_posts()) : while ($query1->have_posts()) : $query1->the_post(); ?>
 
@@ -38,7 +38,7 @@
 </div>
 
 <?php wp_reset_postdata(); ?>
-<?php $query2 = new WP_Query( 'category_name=projects' ); ?>
+<?php $query2 = new WP_Query( 'category_name=entries' ); ?>
 
 <div id="content-entries" class="content group">
 	<?php if ($query2->have_posts()) : while ($query2->have_posts()) : $query2->the_post(); ?>

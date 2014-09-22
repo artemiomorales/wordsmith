@@ -589,3 +589,9 @@ display: inline;
 #container .content {
 	display: inline-block;
 }
+
+iframe {
+	width: 100%;
+	height: ;
+	overflow: visible;
+}
