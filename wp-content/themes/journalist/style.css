@@ -574,3 +574,18 @@ min-height: 1px;
 * html #nav ul li a {
 display: inline;
 }
+
+
+/* Edits */
+
+#content-prototypes {
+	width: 60%;
+}
+
+#content-entries {
+	width: 35%;
+}
+
+#container .content {
+	display: inline-block;
+}
